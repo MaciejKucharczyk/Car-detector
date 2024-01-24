@@ -165,3 +165,7 @@ csv/
 
 # Movies
 *.mp4
+
+# Dataset
+datasets/
+runs/
