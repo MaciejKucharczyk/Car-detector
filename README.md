@@ -5,7 +5,12 @@ Web application using **Flask** as HTTP server and **YOLOv8** pretrained convolu
 ## How to use it?
 
 1. Paste the video file into the **videos** folder.
-2. Change *path* in *input.json* e.g. videos/my-video.mp4
-3. Run the CNN and the sever.
+2. Change *path* in **input.json**
+ ```input.json
+{
+  "path": "videos/my-video.mp4"
+}
+```
+4. Run the CNN and the sever.
 
 
