@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Traffic Live Monitor App</title>
+    <script>
+        function reload_image(){
+            var image = document.getElementById('output');
+            var src = image.src
+            src = src + '?random=' + Math.random();
+            image.setAttribute('src', src);
+        }
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <section class="container">
+          <a class="navbar-brand" href="/">Live monitor</a>
+          <a class="navbar-brand" href="/test">Test</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+            </div>
+          </div>
+        </section>
+    
+      </nav>
+
+    <h1 class="text-center">Live traffic monitor</h1>
+    <div class="text-center">
+        <img id="output" src="{{ url_for('static', filename='live.jpg') }}" alt="Live image" width="600" height="500">
+        <p>Cars: {{cars}}</p>
+        <p>Average per minute: {{avg}}</p>
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" onclick="reload_image()">Current view</button>
+    </div>
+</body>
+</html>

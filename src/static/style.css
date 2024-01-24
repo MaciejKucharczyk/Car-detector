@@ -1,0 +1,44 @@
+.title{
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    image-rendering: optimizeQuality;
+}
+
+nav {
+    margin-bottom: 25px;
+}
+
+h2{
+    text-align: center;
+}
+
+.btn{
+  margin-top: 20px;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    margin: 10px 10;
+    cursor: pointer;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .output{
+    margin: 10px 10px;
+  }
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
