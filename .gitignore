@@ -161,7 +161,7 @@ cython_debug/
 
 # csv files
 csv/
-*csv
+*.csv
 
 # Movies
-*mp4
+*.mp4
