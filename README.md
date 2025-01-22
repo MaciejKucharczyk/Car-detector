@@ -1,4 +1,4 @@
-# Car-detector
+# Car detector
 
 Web application using **Flask** as HTTP server and **YOLOv8** pretrained convolutional neural network.
 
